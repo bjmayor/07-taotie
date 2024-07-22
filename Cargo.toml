@@ -6,3 +6,17 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+anyhow = "1.0.83"
+arrow = { version = "52.0.0", features = ["prettyprint"] }
+chrono = { version = "0.4.38", features = ["serde"] }
+serde = { version = "1.0.201", features = ["derive"] }
+serde_json = "1.0.117"
+datafusion = { version = "40.0.0", features = ["serde"] }
+parquet = "52.1.0"
+polars = { version = "0.41.3", features = [
+	"parquet",
+	"timezones",
+	"sql",
+	"lazy",
+] }
+tokio = { version = "1.37.0", features = ["rt", "rt-multi-thread", "macros"] }
