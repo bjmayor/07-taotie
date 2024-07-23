@@ -24,3 +24,5 @@ clap = { version = "4.5.9", features = ["derive"] }
 reedline-repl-rs = { version = "1.1.1", features = ["async", "derive"] }
 crossbeam-channel = "0.5.13"
 dirs = "5.0.1"
+enum_dispatch = "0.3.13"
+oneshot = "0.1.8"
