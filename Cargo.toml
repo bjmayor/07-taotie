@@ -20,3 +20,5 @@ polars = { version = "0.41.3", features = [
 	"lazy",
 ] }
 tokio = { version = "1.37.0", features = ["rt", "rt-multi-thread", "macros"] }
+clap = { version = "4.5.9", features = ["derive"] }
+reedline-repl-rs = { version = "1.1.1", features = ["async", "derive"] }
