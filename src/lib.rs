@@ -17,7 +17,6 @@ trait CmdExector {
 }
 
 trait Backend {
-    type DataFrame: ReplDisplay;
     async fn connect(&mut self, opts: &ConnectOpts) -> anyhow::Result<()>;
     async fn list(&self) -> anyhow::Result<impl ReplDisplay>;
     async fn schema(&self, name: &str) -> anyhow::Result<impl ReplDisplay>;
